@@ -1,0 +1,36 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\bibAnnoteFile}[1]{%
+  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
+\providecommand{\bibAnnote}[2]{%
+  \begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ #2\end{quotation}}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{diez2013genome}
+D{\'\i}ez CM, Gaut BS, Meca E, Scheinvar E, Montes-Hernandez S, et~al. (2013)
+  Genome size variation in wild and cultivated maize along altitudinal
+  gradients.
+\newblock New Phytologist 199: 264--276.
+\bibAnnoteFile{diez2013genome}
+
+\bibitem{baucom2009exceptional}
+Baucom RS, Estill JC, Chaparro C, Upshaw N, Jogi A, et~al. (2009) Exceptional
+  diversity, non-random distribution, and rapid evolution of retroelements in
+  the b73 maize genome.
+\newblock PLoS Genetics 5: e1000732.
+\bibAnnoteFile{baucom2009exceptional}
+
+\bibitem{li2009fast}
+Li H, Durbin R (2009) Fast and accurate short read alignment with
+  burrows--wheeler transform.
+\newblock Bioinformatics 25: 1754--1760.
+\bibAnnoteFile{li2009fast}
+
+\end{thebibliography}
